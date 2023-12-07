@@ -1,2 +1,7 @@
 @import url(./styles/sanitize.css);
 @import url(./styles/fonts.css);
+@import url(./styles/vars.css);
+
+@import url(./styles/container/container.css);
+
+@import url(./styles/page/page.css);
