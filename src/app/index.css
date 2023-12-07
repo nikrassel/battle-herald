@@ -5,3 +5,7 @@
 @import url(./styles/container/container.css);
 
 @import url(./styles/page/page.css);
+
+@import url(./styles/button/button.css);
+
+@import url(./styles/navigation/navigation.css);
