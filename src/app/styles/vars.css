@@ -1,0 +1,7 @@
+:root {
+  --color-dark: rgb(26, 26, 26);
+  --color-white: rgb(255, 255, 255);
+  --color-dark-grey: rgb(69, 69, 69);
+  --color-lightGrey: rgb(150, 150, 150);
+  --card-border: solid 1px var(var(--color-dark));
+}
