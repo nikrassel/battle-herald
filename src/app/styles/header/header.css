@@ -1,8 +1,20 @@
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 10px;
+  padding: 20px;
   background-color: var(--color-dark-grey);
   color: var(--color-white);
+}
+
+@media (min-width: 751px) {
+  .header {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 750px) {
+  .header {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
