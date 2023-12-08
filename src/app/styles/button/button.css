@@ -10,6 +10,7 @@
   font-size: 18px;
   background-color: var(--color-lightGrey);
   color: var(--color-white);
+  width: 100%;
 }
 
 .button:active {

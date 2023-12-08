@@ -1,4 +1,5 @@
 .header__logo {
   font-weight: 700;
   font-size: 28px;
+  color: var(--color-white);
 }

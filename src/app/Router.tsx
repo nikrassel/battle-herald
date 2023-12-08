@@ -1,5 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
+
 import { APP_PATHS } from './lib/constants/APP_PATHS';
+
 import { CurrentGame, CustomGame, LeviathanGame, MainPage } from '../pages';
 
 export const Router = () => {
