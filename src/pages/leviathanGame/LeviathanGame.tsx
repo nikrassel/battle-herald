@@ -1,3 +1,8 @@
 export const LeviathanGame = () => {
-  return <h3>Leviathan Game settings</h3>;
+  return (
+    <main className="page">
+      <h3>Leviathan Game settings</h3>
+      {/* <InfoCard {...someCard} /> */}
+    </main>
+  );
 };

@@ -12,3 +12,7 @@
 @import url(./styles/button/button.css);
 
 @import url(./styles/navigation/navigation.css);
+
+@import url(./styles/info-card/index.css);
+
+@import url(./styles/info-card-paragraph/index.css);
