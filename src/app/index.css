@@ -6,6 +6,9 @@
 
 @import url(./styles/page/page.css);
 
+@import url(./styles/header/header.css);
+@import url(./styles/header/header__title.css);
+@import url(./styles/header/header__logo.css);
 @import url(./styles/button/button.css);
 
 @import url(./styles/navigation/navigation.css);

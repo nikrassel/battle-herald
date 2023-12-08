@@ -2,3 +2,9 @@
   display: flex;
   gap: 15px;
 }
+
+@media (max-width: 750px) {
+  .navigation {
+    flex-direction: column;
+  }
+}

@@ -1,9 +1,11 @@
-import "./index.css";
+import { Header } from '@widgets/header';
+import './index.css';
 
 function App() {
   return (
     <>
-      <h1>New App</h1>
+      <Header />
+      <div className="container"></div>
     </>
   );
 }
