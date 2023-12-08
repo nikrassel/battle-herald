@@ -1,4 +1,6 @@
 .info-card-paragraph__body {
+  text-align: start;
   font-weight: 400;
   font-size: 12px;
+  margin: 0;
 }

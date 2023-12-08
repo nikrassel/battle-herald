@@ -1,4 +1,5 @@
 .info-card__type {
   font-weight: 700;
   font-size: 10px;
+  text-transform: uppercase;
 }
