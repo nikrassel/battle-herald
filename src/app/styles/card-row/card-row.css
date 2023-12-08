@@ -1,0 +1,28 @@
+.card-row {
+  display: grid;
+  gap: 10px;
+}
+
+@media (min-width: 1241px) {
+  .card-row {
+    grid: 1fr / repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 961px) {
+  .card-row {
+    grid: repeat(2, 1fr) / repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 651px) {
+  .card-row {
+    grid: repeat(3, 1fr) / repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .card-row {
+    grid: repeat(4, 1fr) / 1fr;
+  }
+}
