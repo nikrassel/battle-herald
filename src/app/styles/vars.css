@@ -4,5 +4,6 @@
   --color-dark-grey: rgb(69, 69, 69);
   --color-lightGrey: rgb(150, 150, 150);
   --color-lightGrey-active: rgb(205, 205, 205);
+  --color-bone: rgb(231, 225, 210);
   --card-border: solid 1px var(var(--color-dark));
 }

@@ -1,0 +1,6 @@
+.info-card__body {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
