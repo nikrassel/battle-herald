@@ -9,13 +9,13 @@
   }
 }
 
-@media (min-width: 961px) {
+@media (max-width: 1240px) {
   .card-row {
     grid: repeat(2, 1fr) / repeat(3, 1fr);
   }
 }
 
-@media (min-width: 651px) {
+@media (max-width: 950px) {
   .card-row {
     grid: repeat(3, 1fr) / repeat(2, 1fr);
   }
