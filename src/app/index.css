@@ -4,7 +4,7 @@
 
 @import url(./styles/container/container.css);
 
-@import url(./styles/page/page.css);
+@import url(./styles/page/index.css);
 
 @import url(./styles/header/header.css);
 @import url(./styles/header/header__title.css);
@@ -16,3 +16,5 @@
 @import url(./styles/info-card/index.css);
 
 @import url(./styles/info-card-paragraph/index.css);
+
+@import url(./styles/card-row/card-row.css);

@@ -1,6 +1,6 @@
 export type TCardParagraph = {
   paragraphTitle: string;
-  paragraphBody: string;
+  paragraphBody: string[];
 };
 
 export interface InfoCardProps {
@@ -20,7 +20,9 @@ export const InfoCard = ({ cardType, cardTitle, cardContent }: InfoCardProps) =>
         {cardContent.map((elem) => (
           <div className="info-card-paragraph">
             <h5 className="info-card-paragraph__title">{elem.paragraphTitle}</h5>
-            <p className="info-card-paragraph__body">{elem.paragraphBody}</p>
+            {elem.paragraphBody.map((paragraph) => (
+              <p className="info-card-paragraph__body">{paragraph}</p>
+            ))}
           </div>
         ))}
       </div>
