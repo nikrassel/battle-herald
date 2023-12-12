@@ -1,0 +1,4 @@
+.form-field__input_type_textarea {
+  resize: vertical;
+  min-height: 100px;
+}
