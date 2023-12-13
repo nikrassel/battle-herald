@@ -5,5 +5,5 @@
   --color-lightGrey: rgb(150, 150, 150);
   --color-lightGrey-active: rgb(205, 205, 205);
   --color-bone: rgb(248, 239, 218);
-  --card-border: solid 1px var(var(--color-dark));
+  --card-border: solid 1px var(--color-dark);
 }

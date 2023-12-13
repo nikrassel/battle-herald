@@ -2,11 +2,11 @@
   font-size: 18px;
   line-height: 150%;
   width: 100%;
-  border: var(--field-border);
+  border: var(--card-border);
   border-radius: 0.25rem;
   font-family: 'Merriweather', serif;
 }
 
 .form-field__input:focus {
-  box-shadow: 0 0 0 4px var(--color-underline);
+  box-shadow: 0 0 0 4px var(--color-lightGrey-active);
 }

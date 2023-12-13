@@ -7,6 +7,7 @@ export type TLeviathanTournamentMissionsPool = {
 };
 
 export const leviathanTournamentMissions: TLeviathanTournamentMissionsPool = {
+  empty: [],
   missionA: [
     primaryMissions.takeAndHold,
     missionRules.chillingRain,
