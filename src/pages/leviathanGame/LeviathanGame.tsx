@@ -2,9 +2,14 @@ import { useState } from 'react';
 import { useForm, Controller } from 'react-hook-form';
 
 import { CardRow } from '@//entities/cardRow/CardRow';
-import { InfoCardProps, OptionsField } from '@//shared/ui';
+import { Button, InfoCardProps, OptionsField } from '@//shared/ui';
 
-import { LeviathanMissions, TLeviathanMissionChoise, leviathanTournamentMissions } from './lib';
+import {
+  LeviathanMissions,
+  TLeviathanMissionChoise,
+  getRandomMission,
+  leviathanTournamentMissions,
+} from './lib';
 
 export const LeviathanGame = () => {
   const [chosenMission, setChosenMission] = useState<InfoCardProps[]>(
@@ -14,6 +19,10 @@ export const LeviathanGame = () => {
   const changeMissionHandler = (value: LeviathanMissions) => {
     setValue('choise', value);
     setChosenMission(leviathanTournamentMissions[value]);
+  };
+  const getRandomMissionHandler = () => {
+    const randomMission = getRandomMission();
+    console.log(randomMission);
   };
   return (
     <main className="page">
@@ -36,6 +45,9 @@ export const LeviathanGame = () => {
       </div>
       <div className="page__cards-layout">
         <CardRow cards={chosenMission} />
+      </div>
+      <div className="page__form-wrapper">
+        <Button onClick={getRandomMissionHandler}>Получить случайную миссию</Button>
       </div>
     </main>
   );

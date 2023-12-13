@@ -31,7 +31,7 @@ export const OptionsField = ({
         {...registration}
         {...otherProps}
       >
-        <option value="empty">Выберите один вариант</option>
+        {/* <option value="empty">Выберите один вариант</option> */}
         {options?.map((elem) => (
           <option key={elem} value={elem}>
             {elem}
