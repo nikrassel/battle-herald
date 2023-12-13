@@ -24,7 +24,9 @@ export const InfoCard = ({ cardType, cardTitle, cardContent, cardImage }: InfoCa
           cardContent.map((elem) => (
             <div className="info-card-paragraph">
               {!elem.paragraphTitle ? null : (
-                <h5 className="info-card-paragraph__title">{elem.paragraphTitle}</h5>
+                <div className="info-card-paragraph__title-background">
+                  <h5 className="info-card-paragraph__title">{elem.paragraphTitle}</h5>
+                </div>
               )}
               {elem.paragraphBody.map((paragraph) => (
                 <p className="info-card-paragraph__body">{paragraph}</p>
