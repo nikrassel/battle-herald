@@ -22,7 +22,6 @@ export const LeviathanGame = () => {
   };
   const getRandomMissionHandler = () => {
     const randomMission = getRandomMission();
-    console.log(randomMission);
   };
   return (
     <main className="page">
