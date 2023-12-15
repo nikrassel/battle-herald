@@ -1,7 +1,7 @@
 import { LeviathanMissions } from '@//pages/leviathanGame/lib';
 import { CURRENT_LEVIATHAN_GAME } from './lib';
 
-export const setCurrentLeviathanGame = (missionId: LeviathanMissions) => {
+export const setCurrentLeviathanGame = (missionId: string) => {
   localStorage.setItem(CURRENT_LEVIATHAN_GAME, missionId);
 };
 
