@@ -5,6 +5,11 @@ export const setCurrentLeviathanGame = (missionId: LeviathanMissions) => {
   localStorage.setItem(CURRENT_LEVIATHAN_GAME, missionId);
 };
 
+export const checkCurrentGame = () => {
+  return localStorage.getItem(CURRENT_LEVIATHAN_GAME);
+};
+
 export const localStorageService = {
   setCurrentLeviathanGame,
+  checkCurrentGame,
 };
