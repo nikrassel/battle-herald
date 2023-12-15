@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { useForm, Controller } from 'react-hook-form';
 
 import { CardRow } from '@//entities/cardRow/CardRow';
@@ -10,18 +10,27 @@ import {
   getRandomMission,
   leviathanTournamentMissions,
 } from './lib';
+import { localStorageService } from '@//app/localStorage';
+import { GameContext } from '@//app/context';
 
 export const LeviathanGame = () => {
+  const context = useContext(GameContext);
   const [chosenMission, setChosenMission] = useState<InfoCardProps[]>(
     leviathanTournamentMissions.missionA,
   );
-  const { control, setValue } = useForm<TLeviathanMissionChoise>();
+  const { control, setValue, getValues } = useForm<TLeviathanMissionChoise>();
   const changeMissionHandler = (value: LeviathanMissions) => {
     setValue('choise', value);
     setChosenMission(leviathanTournamentMissions[value]);
   };
   const getRandomMissionHandler = () => {
     const randomMission = getRandomMission();
+    localStorageService.setCurrentLeviathanGame(randomMission.missionName);
+    context?.setIsCurrentGame(true);
+  };
+  const getChosenMissionHandler = () => {
+    localStorageService.setCurrentLeviathanGame(getValues('choise'));
+    context?.setIsCurrentGame(true);
   };
   return (
     <main className="page">
@@ -45,8 +54,9 @@ export const LeviathanGame = () => {
       <div className="page__cards-layout">
         <CardRow cards={chosenMission} />
       </div>
-      <div className="page__form-wrapper">
+      <div className="page__control-panel">
         <Button onClick={getRandomMissionHandler}>Получить случайную миссию</Button>
+        <Button onClick={getChosenMissionHandler}>Это мой выбор</Button>
       </div>
     </main>
   );
