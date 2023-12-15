@@ -21,13 +21,17 @@ export const InfoCard = ({ cardType, cardTitle, cardContent, cardImage }: InfoCa
         {cardImage ? (
           <img src={cardImage} />
         ) : (
-          cardContent.map((elem) => (
-            <div className="info-card-paragraph">
+          cardContent.map((elem, index) => (
+            <div className="info-card-paragraph" key={index}>
               {!elem.paragraphTitle ? null : (
-                <h5 className="info-card-paragraph__title">{elem.paragraphTitle}</h5>
+                <div className="info-card-paragraph__title-background">
+                  <h5 className="info-card-paragraph__title">{elem.paragraphTitle}</h5>
+                </div>
               )}
-              {elem.paragraphBody.map((paragraph) => (
-                <p className="info-card-paragraph__body">{paragraph}</p>
+              {elem.paragraphBody.map((paragraph, index) => (
+                <p className="info-card-paragraph__body" key={index}>
+                  {paragraph}
+                </p>
               ))}
             </div>
           ))

@@ -29,8 +29,9 @@ export const OptionsField = ({
         id={id}
         className="form-field__input form-field__input_type_options"
         {...registration}
-        {...otherProps}>
-        <option value="">Выберите один вариант</option>
+        {...otherProps}
+      >
+        {/* <option value="empty">Выберите один вариант</option> */}
         {options?.map((elem) => (
           <option key={elem} value={elem}>
             {elem}

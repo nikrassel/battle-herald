@@ -7,8 +7,8 @@ export interface CardRowProps {
 export const CardRow = ({ cards }: CardRowProps) => {
   return (
     <div className="card-row">
-      {cards.map((elem) => (
-        <InfoCard {...elem} />
+      {cards.map((elem, index) => (
+        <InfoCard {...elem} key={index} />
       ))}
     </div>
   );

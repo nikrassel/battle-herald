@@ -1,0 +1,6 @@
+.info-card-paragraph__title-background {
+  display: flex;
+  background-color: var(--color-card-paragraph);
+  color: var(--color-white);
+  justify-content: center;
+}
