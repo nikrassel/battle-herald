@@ -1,8 +1,11 @@
 import { useContext, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useForm, Controller } from 'react-hook-form';
 
 import { CardRow } from '@//entities/cardRow/CardRow';
 import { Button, InfoCardProps, OptionsField } from '@//shared/ui';
+import { localStorageService } from '@//app/localStorage';
+import { GameContext } from '@//app/context';
 
 import {
   LeviathanMissions,
@@ -10,27 +13,31 @@ import {
   getRandomMission,
   leviathanTournamentMissions,
 } from './lib';
-import { localStorageService } from '@//app/localStorage';
-import { GameContext } from '@//app/context';
 
 export const LeviathanGame = () => {
+  const navigate = useNavigate();
   const context = useContext(GameContext);
+
   const [chosenMission, setChosenMission] = useState<InfoCardProps[]>(
     leviathanTournamentMissions.missionA,
   );
+
   const { control, setValue, getValues } = useForm<TLeviathanMissionChoise>();
+
   const changeMissionHandler = (value: LeviathanMissions) => {
     setValue('choise', value);
     setChosenMission(leviathanTournamentMissions[value]);
   };
-  const getRandomMissionHandler = () => {
-    const randomMission = getRandomMission();
-    localStorageService.setCurrentLeviathanGame(randomMission.missionName);
+
+  const beginNewMissionHandler = (random: boolean) => {
+    if (random) {
+      const randomMission = getRandomMission();
+      localStorageService.setCurrentLeviathanGame(randomMission.missionName);
+    } else {
+      localStorageService.setCurrentLeviathanGame(getValues('choise'));
+    }
     context?.setIsCurrentGame(true);
-  };
-  const getChosenMissionHandler = () => {
-    localStorageService.setCurrentLeviathanGame(getValues('choise'));
-    context?.setIsCurrentGame(true);
+    navigate('/currentGame');
   };
   return (
     <main className="page">
@@ -55,8 +62,8 @@ export const LeviathanGame = () => {
         <CardRow cards={chosenMission} />
       </div>
       <div className="page__control-panel">
-        <Button onClick={getRandomMissionHandler}>Получить случайную миссию</Button>
-        <Button onClick={getChosenMissionHandler}>Это мой выбор</Button>
+        <Button onClick={() => beginNewMissionHandler(true)}>Получить случайную миссию</Button>
+        <Button onClick={() => beginNewMissionHandler(false)}>Это мой выбор</Button>
       </div>
     </main>
   );
