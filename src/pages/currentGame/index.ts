@@ -1,1 +1,2 @@
-export * from './CurrentGame';
+export * from './components';
+export * from './connectors';

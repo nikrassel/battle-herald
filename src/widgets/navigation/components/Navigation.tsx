@@ -1,8 +1,8 @@
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 
 import { Button } from '@shared/ui';
 import { APP_PATHS } from '@//app/lib/constants/APP_PATHS';
-import { useContext } from 'react';
 import { GameContext } from '@//app/context';
 
 export const Navigation = () => {
