@@ -3,3 +3,4 @@ export * from './missionRules';
 export * from './primaryMissions';
 export * from './terrainLayouts';
 export * from './leviathanMissions';
+export * from './missionOptions';
