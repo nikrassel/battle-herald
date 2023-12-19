@@ -12,6 +12,7 @@ import {
   TLeviathanMissionChoise,
   getRandomMission,
   leviathanTournamentMissions,
+  missionOptions,
 } from './lib';
 
 export const LeviathanGame = () => {
@@ -51,7 +52,7 @@ export const LeviathanGame = () => {
             <OptionsField
               label="Выберите тип миссии"
               id="01"
-              options={Object.values(LeviathanMissions)}
+              options={missionOptions}
               {...field}
               onChange={(event) => changeMissionHandler(event.target.value as LeviathanMissions)}
             />

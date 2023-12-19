@@ -3,10 +3,15 @@ import { UseFormRegisterReturn, FieldErrors } from 'react-hook-form';
 
 import '@app/index.css';
 
+export type TFieldOptions = {
+  label: string;
+  value: string;
+};
+
 interface IOptionsFieldProps
   extends DetailedHTMLProps<React.SelectHTMLAttributes<HTMLSelectElement>, HTMLSelectElement> {
   label: string;
-  options: string[] | undefined;
+  options: TFieldOptions[] | undefined;
   id: string;
   registration?: UseFormRegisterReturn;
   errors?: FieldErrors;
@@ -28,8 +33,8 @@ export const OptionsField = forwardRef(
         >
           {/* <option value="empty">Выберите один вариант</option> */}
           {options?.map((elem) => (
-            <option key={elem} value={elem}>
-              {elem}
+            <option key={elem.value} value={elem.value}>
+              {elem.label}
             </option>
           ))}
         </select>
