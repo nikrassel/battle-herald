@@ -17,10 +17,7 @@ export const CustomGame = () => {
   const { control, getValues, watch } = useForm<TCustomGameSettings>();
   const infoCards = useMemo(() => {
     const newValues = getValues();
-    if (newValues) {
-      return mapInfoCardsKeys(newValues);
-    }
-    return [];
+    return mapInfoCardsKeys(newValues);
   }, [watch()]);
   return (
     <main className="page">
