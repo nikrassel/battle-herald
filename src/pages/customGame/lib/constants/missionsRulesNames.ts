@@ -1,5 +1,5 @@
 export enum MissionsRulesNames {
-  noMission = '',
+  noMission = 'noMission',
   chillingRain = 'chillingRain',
   hiddenSupplies = 'hiddenSupplies',
   chosenBattlefield = 'chosenBattlefield',
