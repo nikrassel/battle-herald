@@ -5,3 +5,4 @@ export * from './deployOptions';
 export * from './missionsRulesOptions';
 export * from './primaryMissionsOptions';
 export * from './customGameDefaultValues';
+export * from './customMissionRules';

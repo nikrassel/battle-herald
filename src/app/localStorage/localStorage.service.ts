@@ -30,6 +30,7 @@ export const checkCurrentGame = () => {
 
 export const localStorageService = {
   setCurrentLeviathanGame,
+  setCurrentCustomGame,
   checkCurrentGame,
   endCurrentGame,
 };
