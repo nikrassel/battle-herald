@@ -1,6 +1,6 @@
 import { InfoCardProps } from '@//shared/ui';
 
-import { deployments, missionRules, primaryMissions, terrainLayouts } from '.';
+import { deployments, missionRules, primaryMissions, terrainLayouts } from '@//shared/tempDB';
 
 export type TLeviathanTournamentMissionsPool = {
   [key: string]: InfoCardProps[];

@@ -1,9 +1,3 @@
-import { InfoCardProps } from '@//shared/ui';
-
-export type TInfoCardDeck = {
-  [key: string]: InfoCardProps;
-};
-
 export enum LeviathanMissions {
   missionA = 'missionA',
   missionB = 'missionB',

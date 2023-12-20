@@ -21,4 +21,9 @@ export const deployments: TInfoCardDeck = {
     cardTitle: 'search and destroy',
     cardContent: [],
   },
+  crusibleOfBattle: {
+    cardType: 'deployment',
+    cardTitle: 'crussible of battle',
+    cardContent: [],
+  },
 };
