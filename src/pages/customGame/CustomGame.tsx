@@ -3,7 +3,7 @@ import { useForm, Controller } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
 
 import { GameContext } from '@//app/context';
-import { Button, InfoCardProps, OptionsField } from '@//shared/ui';
+import { Button, OptionsField } from '@//shared/ui';
 import { CardRow } from '@//entities/cardRow/CardRow';
 import { localStorageService } from '@//app/localStorage';
 
