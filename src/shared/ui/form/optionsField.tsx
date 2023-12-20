@@ -5,7 +5,7 @@ import '@app/index.css';
 
 export type TFieldOptions = {
   label: string;
-  value: string;
+  value: string | number;
 };
 
 interface IOptionsFieldProps

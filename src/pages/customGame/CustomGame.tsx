@@ -6,12 +6,22 @@ import {
   TCustomGameSettings,
   customGameDefaultValues,
   deployOptions,
+  mapInfoCardsKeys,
   missionsRulesOptions,
   primaryMissionsOptions,
 } from './lib';
+import { useMemo } from 'react';
+import { CardRow } from '@//entities/cardRow/CardRow';
 
 export const CustomGame = () => {
-  const { control } = useForm<TCustomGameSettings>();
+  const { control, getValues, watch } = useForm<TCustomGameSettings>();
+  const infoCards = useMemo(() => {
+    const newValues = getValues();
+    if (newValues) {
+      return mapInfoCardsKeys(newValues);
+    }
+    return [];
+  }, [watch()]);
   return (
     <main className="page">
       <h3>Custom Game settings</h3>
@@ -26,7 +36,6 @@ export const CustomGame = () => {
               id="primary"
               options={primaryMissionsOptions}
               {...field}
-              onChange={(event) => {}}
             />
           )}
         />
@@ -40,7 +49,6 @@ export const CustomGame = () => {
               id="deploy"
               options={deployOptions}
               {...field}
-              onChange={(event) => {}}
             />
           )}
         />
@@ -51,10 +59,9 @@ export const CustomGame = () => {
           render={({ field }) => (
             <OptionsField
               label="Выберите дополнительные правила"
-              id="mission-rule-01"
+              id="mission-rule-A"
               options={missionsRulesOptions}
               {...field}
-              onChange={(event) => {}}
             />
           )}
         />
@@ -63,13 +70,7 @@ export const CustomGame = () => {
           name="missionRuleB"
           defaultValue={customGameDefaultValues.missionRuleB}
           render={({ field }) => (
-            <OptionsField
-              label=""
-              id="mission-rule-02"
-              options={missionsRulesOptions}
-              {...field}
-              onChange={(event) => {}}
-            />
+            <OptionsField label="" id="mission-rule-B" options={missionsRulesOptions} {...field} />
           )}
         />
         <Controller
@@ -77,15 +78,12 @@ export const CustomGame = () => {
           name="missionRuleC"
           defaultValue={customGameDefaultValues.missionRuleC}
           render={({ field }) => (
-            <OptionsField
-              label=""
-              id="mission-rule-03"
-              options={missionsRulesOptions}
-              {...field}
-              onChange={(event) => {}}
-            />
+            <OptionsField label="" id="mission-rule-C" options={missionsRulesOptions} {...field} />
           )}
         />
+      </div>
+      <div className="page__cards-layout">
+        {infoCards.length > 0 && <CardRow cards={infoCards} />}
       </div>
     </main>
   );

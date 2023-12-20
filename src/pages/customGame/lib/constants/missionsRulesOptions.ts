@@ -2,6 +2,10 @@ import { TFieldOptions } from '@//shared/ui';
 
 export const missionsRulesOptions: TFieldOptions[] = [
   {
+    label: 'Отключено',
+    value: 'noMission',
+  },
+  {
     label: 'Chilling Rain',
     value: 'chillingRain',
   },
