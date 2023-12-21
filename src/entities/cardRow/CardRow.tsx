@@ -6,10 +6,12 @@ export interface CardRowProps {
 
 export const CardRow = ({ cards }: CardRowProps) => {
   return (
-    <div className="card-row">
+    <ul className="card-list">
       {cards.map((elem, index) => (
-        <InfoCard {...elem} key={index} />
+        <li key={index} className="card-list__item">
+          <InfoCard {...elem} />
+        </li>
       ))}
-    </div>
+    </ul>
   );
 };
