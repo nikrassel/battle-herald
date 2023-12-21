@@ -1,0 +1,32 @@
+.card-list {
+  display: grid;
+  gap: 20px;
+  align-items: center;
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+}
+
+@media (min-width: 1241px) {
+  .card-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1240px) {
+  .card-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 950px) {
+  .card-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .card-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

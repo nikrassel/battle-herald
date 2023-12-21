@@ -4,7 +4,18 @@ import { useNavigate } from 'react-router-dom';
 import { GameContext } from '@//app/context';
 import { localStorageService } from '@//app/localStorage';
 
-import { CurrentGameControlPanel, CurrentLeviathanGame } from '..';
+import { CurrentCustomGame, CurrentGameControlPanel, CurrentLeviathanGame } from '..';
+import { isStringArray } from '../lib';
+
+const mainInfo = (currentGame: string | string[] | null) => {
+  if (currentGame && typeof currentGame === 'string') {
+    return <CurrentLeviathanGame missionId={currentGame} />;
+  }
+  if (currentGame && isStringArray(currentGame)) {
+    return <CurrentCustomGame missionInfo={currentGame} />;
+  }
+  return null;
+};
 
 export const CurrentGameConnector = () => {
   const context = useContext(GameContext);
@@ -16,7 +27,7 @@ export const CurrentGameConnector = () => {
   return (
     <main className="page">
       <h3>Current Game settings</h3>
-      {currentGame && <CurrentLeviathanGame missionId={currentGame} />}
+      {mainInfo(currentGame)}
       <div className="page__control-panel">
         <CurrentGameControlPanel />
       </div>

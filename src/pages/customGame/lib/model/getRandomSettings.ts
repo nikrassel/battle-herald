@@ -1,4 +1,4 @@
-import { deployments, primaryMissions } from '@//pages/leviathanGame/lib';
+import { deployments, primaryMissions } from '@//shared/tempDB';
 import { getRandomItem } from '@//shared/model';
 import { customMissionRules } from '..';
 
