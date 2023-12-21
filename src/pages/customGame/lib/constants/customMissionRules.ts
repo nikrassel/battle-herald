@@ -4,7 +4,7 @@ export const customMissionRules = [
   'chosenBattlefield',
   'scramblerFields',
   'maelstormOfBattle',
-  'sweepAndClean',
+  'sweepAndClear',
   'minefields',
   'targetsOfOpportunity',
   'delayedReserves',

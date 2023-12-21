@@ -1,4 +1,4 @@
-import { deployments, missionRules, primaryMissions } from '@//pages/leviathanGame/lib';
+import { deployments, missionRules, primaryMissions } from '@//shared/tempDB';
 import { TCustomGameSettings } from '..';
 import { InfoCardProps } from '@//shared/ui';
 
