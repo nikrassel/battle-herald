@@ -17,4 +17,8 @@ export const deployOptions: TFieldOptions[] = [
     label: 'Search and Destroy',
     value: 'searchAndDestroy',
   },
+  {
+    label: 'Crusible of Battle',
+    value: 'crusibleOfBattle',
+  },
 ];
