@@ -190,9 +190,8 @@ export const primaryMissions: TInfoCardDeck = {
           Deployment zone; 5VP for each Servo-skull that is wholly within 6” of their Opponent’s
           Deployment zone.; 8VP for each Servo-skull that is wholly within their Opponent’s
           Deployment zone.`,
-          `Note that these are cumulative, so if a Servo-skull is wholly within your 
-          Opponent’s Deployment zone, you would score 15VP from that Servo-skull
-          at the end of your turn. `,
+          `Note that these are not cumulative, if more than one applies, the player whose turn it is
+          scores the applicable condition that carries tht highest VP reward`,
         ],
       },
     ],
