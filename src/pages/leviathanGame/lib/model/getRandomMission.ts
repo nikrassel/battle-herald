@@ -1,5 +1,4 @@
 import { getRandomItem } from '@//shared/model';
-import { InfoCardProps } from '@//shared/ui';
 
 import { leviathanTournamentMissions } from '..';
 
