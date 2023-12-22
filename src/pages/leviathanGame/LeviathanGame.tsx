@@ -34,6 +34,10 @@ export const LeviathanGame = () => {
   const changeMissionHandler = (value: LeviathanMissions) => {
     setValue('choise', value);
     setChosenMission(leviathanTournamentMissions[value]);
+    setValue(
+      'terrain',
+      leviathanTournamentMissions[value].terrainLayout[0].value as TerrainLayouts,
+    );
     setChosenTerrainLayout(
       leviathanTournamentMissions[value].terrainLayout[0].value as TerrainLayouts,
     );

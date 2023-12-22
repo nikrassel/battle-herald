@@ -1,24 +1,25 @@
 import { TFieldOptions } from '@//shared/ui';
+import { DeploymentsNames } from '.';
 
 export const deployOptions: TFieldOptions[] = [
   {
     label: 'Hammer and Anvil',
-    value: 'hammerAndAnvil',
+    value: DeploymentsNames.hammerAndAnvil,
   },
   {
     label: 'Sweeping Engagement',
-    value: 'sweepingEngagement',
+    value: DeploymentsNames.sweepingEngagement,
   },
   {
     label: 'Dawn of War',
-    value: 'dawnOfWar',
+    value: DeploymentsNames.dawnOfWar,
   },
   {
     label: 'Search and Destroy',
-    value: 'searchAndDestroy',
+    value: DeploymentsNames.searchAndDestroy,
   },
   {
-    label: 'Crusible of Battle',
-    value: 'crusibleOfBattle',
+    label: 'Crucible of Battle',
+    value: DeploymentsNames.crucibleOfBattle,
   },
 ];
