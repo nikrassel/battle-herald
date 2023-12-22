@@ -26,7 +26,7 @@ export const CurrentGameConnector = () => {
   }
   return (
     <main className="page">
-      <h3>Current Game settings</h3>
+      <h3 className="page__title">Current Game settings</h3>
       {mainInfo(currentGame)}
       <div className="page__control-panel">
         <CurrentGameControlPanel />

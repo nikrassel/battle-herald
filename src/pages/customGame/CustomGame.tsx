@@ -42,7 +42,7 @@ export const CustomGame = () => {
   };
   return (
     <main className="page">
-      <h3>Custom Game settings</h3>
+      <h3 className="page__title">Custom Game settings</h3>
       <div className="page__form-wrapper">
         <Controller
           control={control}
