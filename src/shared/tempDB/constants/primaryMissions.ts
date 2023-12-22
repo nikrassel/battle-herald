@@ -1,7 +1,8 @@
+import { PrimaryMissionsNames } from '@//pages/customGame/lib';
 import { TInfoCardDeck } from '..';
 
 export const primaryMissions: TInfoCardDeck = {
-  takeAndHold: {
+  [PrimaryMissionsNames.takeAndHold]: {
     cardType: 'primary mission',
     cardTitle: 'take and hold',
     cardContent: [
@@ -20,7 +21,7 @@ export const primaryMissions: TInfoCardDeck = {
       },
     ],
   },
-  scorchedEarth: {
+  [PrimaryMissionsNames.scorchedEarth]: {
     cardType: 'primary mission',
     cardTitle: 'scorched earth',
     cardContent: [
@@ -55,7 +56,7 @@ export const primaryMissions: TInfoCardDeck = {
       },
     ],
   },
-  purgeTheFoe: {
+  [PrimaryMissionsNames.purgeTheFoe]: {
     cardType: 'primary mission',
     cardTitle: 'purge the foe',
     cardContent: [
@@ -80,7 +81,7 @@ export const primaryMissions: TInfoCardDeck = {
       },
     ],
   },
-  priorityTargets: {
+  [PrimaryMissionsNames.priorityTargets]: {
     cardType: 'primary mission',
     cardTitle: 'priority targets',
     cardContent: [
@@ -98,7 +99,7 @@ export const primaryMissions: TInfoCardDeck = {
       },
     ],
   },
-  sitesOfPower: {
+  [PrimaryMissionsNames.sitesOfPower]: {
     cardType: 'primary mission',
     cardTitle: 'sites of power',
     cardContent: [
@@ -133,7 +134,7 @@ export const primaryMissions: TInfoCardDeck = {
       },
     ],
   },
-  theRitual: {
+  [PrimaryMissionsNames.theRitual]: {
     cardType: 'primary mission',
     cardTitle: 'the ritual',
     cardContent: [
@@ -169,7 +170,7 @@ export const primaryMissions: TInfoCardDeck = {
       },
     ],
   },
-  deployServoSkulls: {
+  [PrimaryMissionsNames.deployServoSkulls]: {
     cardType: 'primary mission',
     cardTitle: 'deploy servo skulls',
     cardContent: [
@@ -196,7 +197,7 @@ export const primaryMissions: TInfoCardDeck = {
       },
     ],
   },
-  supplyDrop: {
+  [PrimaryMissionsNames.supplyDrop]: {
     cardType: 'primary mission',
     cardTitle: 'supply drop',
     cardContent: [
@@ -235,7 +236,7 @@ export const primaryMissions: TInfoCardDeck = {
       },
     ],
   },
-  vitalGround: {
+  [PrimaryMissionsNames.vitalGround]: {
     cardType: 'primary mission',
     cardTitle: 'vital ground',
     cardContent: [

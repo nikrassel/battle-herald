@@ -1,40 +1,41 @@
 import { TFieldOptions } from '@//shared/ui';
+import { PrimaryMissionsNames } from '.';
 
 export const primaryMissionsOptions: TFieldOptions[] = [
   {
     label: 'Take and Hold',
-    value: 'takeAndHold',
+    value: PrimaryMissionsNames.takeAndHold,
   },
   {
     label: 'Scorched Earth',
-    value: 'scorchedEarth',
+    value: PrimaryMissionsNames.scorchedEarth,
   },
   {
     label: 'Purge the Foe',
-    value: 'purgeTheFoe',
+    value: PrimaryMissionsNames.purgeTheFoe,
   },
   {
     label: 'Priority Targets',
-    value: 'priorityTargets',
+    value: PrimaryMissionsNames.priorityTargets,
   },
   {
     label: 'Sites of Power',
-    value: 'sitesOfPower',
+    value: PrimaryMissionsNames.sitesOfPower,
   },
   {
     label: 'The Ritual',
-    value: 'theRitual',
+    value: PrimaryMissionsNames.theRitual,
   },
   {
     label: 'Deploy Servo Skulls',
-    value: 'deployServoSkulls',
+    value: PrimaryMissionsNames.deployServoSkulls,
   },
   {
     label: 'Supply Drop',
-    value: 'supplyDrop',
+    value: PrimaryMissionsNames.supplyDrop,
   },
   {
     label: 'Vital Ground',
-    value: 'vitalGround',
+    value: PrimaryMissionsNames.vitalGround,
   },
 ];
