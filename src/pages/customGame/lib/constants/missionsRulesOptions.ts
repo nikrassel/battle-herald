@@ -1,4 +1,5 @@
 import { TFieldOptions } from '@//shared/ui';
+import { MissionsRulesNames } from '.';
 
 export const missionsRulesOptions: TFieldOptions[] = [
   {
@@ -7,46 +8,46 @@ export const missionsRulesOptions: TFieldOptions[] = [
   },
   {
     label: 'Chilling Rain',
-    value: 'chillingRain',
+    value: MissionsRulesNames.chillingRain,
   },
   {
     label: 'Hidden Supplies',
-    value: 'hiddenSupplies',
+    value: MissionsRulesNames.hiddenSupplies,
   },
   {
     label: 'Chosen Battlefield',
-    value: 'chosenBattlefield',
+    value: MissionsRulesNames.chosenBattlefield,
   },
   {
     label: 'Scrambler Fields',
-    value: 'scramblerFields',
+    value: MissionsRulesNames.scramblerFields,
   },
   {
     label: 'Sweep and Clear',
-    value: 'sweepAndClear',
+    value: MissionsRulesNames.sweepAndClear,
   },
   {
     label: 'Minefields',
-    value: 'minefields',
+    value: MissionsRulesNames.minefields,
   },
   {
     label: 'Targets of Opportunity',
-    value: 'targetsOfOpportunity',
+    value: MissionsRulesNames.targetsOfOpportunity,
   },
   {
     label: 'Delayed Reserves',
-    value: 'delayedReserves',
+    value: MissionsRulesNames.delayedReserves,
   },
   {
     label: 'Supply Lines',
-    value: 'supplyLines',
+    value: MissionsRulesNames.supplyLines,
   },
   {
     label: 'Secret Intel',
-    value: 'secretIntel',
+    value: MissionsRulesNames.secretIntel,
   },
   {
     label: 'Vox Static',
-    value: 'voxStatic',
+    value: MissionsRulesNames.voxStatic,
   },
 ];

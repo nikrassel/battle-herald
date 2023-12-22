@@ -1,7 +1,8 @@
+import { MissionsRulesNames } from '@//pages/customGame/lib';
 import { TInfoCardDeck } from '..';
 
 export const missionRules: TInfoCardDeck = {
-  chillingRain: {
+  [MissionsRulesNames.chillingRain]: {
     cardType: 'mission rule',
     cardTitle: 'chilling rain',
     cardContent: [
@@ -10,7 +11,7 @@ export const missionRules: TInfoCardDeck = {
       },
     ],
   },
-  hiddenSupplies: {
+  [MissionsRulesNames.hiddenSupplies]: {
     cardType: 'mission rule',
     cardTitle: 'hidden supplies',
     cardContent: [
@@ -26,7 +27,7 @@ export const missionRules: TInfoCardDeck = {
       },
     ],
   },
-  chosenBattlefield: {
+  [MissionsRulesNames.chosenBattlefield]: {
     cardType: 'mission rule',
     cardTitle: 'chosen battlefield',
     cardContent: [
@@ -46,7 +47,7 @@ export const missionRules: TInfoCardDeck = {
       },
     ],
   },
-  scramblerFields: {
+  [MissionsRulesNames.scramblerFields]: {
     cardType: 'mission rule',
     cardTitle: 'scrambler fields',
     cardContent: [
@@ -78,7 +79,7 @@ export const missionRules: TInfoCardDeck = {
       },
     ],
   },
-  sweepAndClear: {
+  [MissionsRulesNames.sweepAndClear]: {
     cardType: 'mission rule',
     cardTitle: 'sweep and clear',
     cardContent: [
@@ -90,7 +91,7 @@ export const missionRules: TInfoCardDeck = {
       },
     ],
   },
-  minefields: {
+  [MissionsRulesNames.minefields]: {
     cardType: 'mission rule',
     cardTitle: 'minefields',
     cardContent: [
@@ -102,7 +103,7 @@ export const missionRules: TInfoCardDeck = {
       },
     ],
   },
-  targetsOfOpportunity: {
+  [MissionsRulesNames.targetsOfOpportunity]: {
     cardType: 'mission rule',
     cardTitle: 'targets of opportunity',
     cardContent: [
@@ -131,7 +132,7 @@ export const missionRules: TInfoCardDeck = {
       },
     ],
   },
-  delayedReserves: {
+  [MissionsRulesNames.delayedReserves]: {
     cardType: 'mission rule',
     cardTitle: 'delayed reserves',
     cardContent: [
@@ -147,7 +148,7 @@ export const missionRules: TInfoCardDeck = {
       },
     ],
   },
-  supplyLines: {
+  [MissionsRulesNames.supplyLines]: {
     cardType: 'mission rule',
     cardTitle: 'supply lines',
     cardContent: [
@@ -161,7 +162,7 @@ export const missionRules: TInfoCardDeck = {
       },
     ],
   },
-  secretIntel: {
+  [MissionsRulesNames.secretIntel]: {
     cardType: 'mission rule',
     cardTitle: 'secret intel',
     cardContent: [
@@ -176,7 +177,7 @@ export const missionRules: TInfoCardDeck = {
       },
     ],
   },
-  voxStatic: {
+  [MissionsRulesNames.voxStatic]: {
     cardType: 'mission rule',
     cardTitle: 'vox static',
     cardContent: [
