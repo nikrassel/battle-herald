@@ -4,9 +4,10 @@ export const endCurrentGame = () => {
   localStorage.clear();
 };
 
-export const setCurrentLeviathanGame = (missionId: string) => {
+export const setCurrentLeviathanGame = (missionSettings: string[]) => {
   endCurrentGame();
-  localStorage.setItem(CURRENT_LEVIATHAN_GAME, missionId);
+  const savedInfo = missionSettings.join('|');
+  localStorage.setItem(CURRENT_LEVIATHAN_GAME, savedInfo);
 };
 
 export const setCurrentCustomGame = (missionSettings: string[]) => {

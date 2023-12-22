@@ -3,4 +3,5 @@ export enum DeploymentsNames {
   sweepingEngagement = 'sweepingEngagement',
   dawnOfWar = 'dawnOfWar',
   searchAndDestroy = 'searchAndDestroy',
+  crucibleOfBattle = 'crucibleOfBattle',
 }

@@ -1,29 +1,30 @@
+import { DeploymentsNames } from '@//pages/customGame/lib';
 import { TInfoCardDeck } from '..';
 
 export const deployments: TInfoCardDeck = {
-  hammerAndAnvil: {
+  [DeploymentsNames.hammerAndAnvil]: {
     cardType: 'deployment',
     cardTitle: 'hammer and anvil',
     cardContent: [],
   },
-  sweepingEngagement: {
+  [DeploymentsNames.sweepingEngagement]: {
     cardType: 'deployment',
     cardTitle: 'sweeping engagement',
     cardContent: [],
   },
-  dawnOfWar: {
+  [DeploymentsNames.dawnOfWar]: {
     cardType: 'deployment',
     cardTitle: 'dawn of war',
     cardContent: [],
   },
-  searchAndDestroy: {
+  [DeploymentsNames.searchAndDestroy]: {
     cardType: 'deployment',
     cardTitle: 'search and destroy',
     cardContent: [],
   },
-  crusibleOfBattle: {
+  [DeploymentsNames.crucibleOfBattle]: {
     cardType: 'deployment',
-    cardTitle: 'crussible of battle',
+    cardTitle: 'crucible of battle',
     cardContent: [],
   },
 };
