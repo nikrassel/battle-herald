@@ -187,9 +187,12 @@ export const primaryMissions: TInfoCardDeck = {
         paragraphTitle: 'Second, third, fourth and fifth battle rounds',
         paragraphBody: [
           `At the end of each turn, the player whose turn it is scores VP as 
-          follows: 2VP for each Servo-skull that is wholly within 12” of their Opponent’s
-          Deployment zone; 5VP for each Servo-skull that is wholly within 6” of their Opponent’s
-          Deployment zone.; 8VP for each Servo-skull that is wholly within their Opponent’s
+          follows:`,
+          `2VP for each Servo-skull that is wholly within 12” of their Opponent’s
+          Deployment zone;`,
+          `5VP for each Servo-skull that is wholly within 6” of their Opponent’s
+          Deployment zone.;`,
+          `8VP for each Servo-skull that is wholly within their Opponent’s
           Deployment zone.`,
           `Note that these are not cumulative, if more than one applies, the player whose turn it is
           scores the applicable condition that carries tht highest VP reward`,

@@ -214,12 +214,12 @@ export const leviathanTournamentMissions: TLeviathanTournamentMissionsPool = {
         value: 'layoutOne',
       },
       {
-        label: 'Layout 3',
-        value: 'layoutThree',
-      },
-      {
         label: 'Layout 2',
         value: 'layoutTwo',
+      },
+      {
+        label: 'Layout 3',
+        value: 'layoutThree',
       },
     ],
   },
@@ -248,12 +248,12 @@ export const leviathanTournamentMissions: TLeviathanTournamentMissionsPool = {
         value: 'layoutOne',
       },
       {
-        label: 'Layout 3',
-        value: 'layoutThree',
-      },
-      {
         label: 'Layout 2',
         value: 'layoutTwo',
+      },
+      {
+        label: 'Layout 3',
+        value: 'layoutThree',
       },
     ],
   },
