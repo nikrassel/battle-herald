@@ -27,6 +27,7 @@ export const OptionsField = forwardRef(
         </label>
         <select
           id={id}
+          ref={ref}
           className="form-field__input form-field__input_type_options"
           {...registration}
           {...otherProps}
