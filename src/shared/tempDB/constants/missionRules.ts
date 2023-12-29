@@ -45,6 +45,25 @@ export const missionRules: TInfoCardDeck = {
             more than 9” away from all other Objective markers. `,
         ],
       },
+      {
+        paragraphBody: [
+          `If for whatever reason it is not possible to Set up an Objective marker as
+          described above, it is not placed on the Battlefield.`,
+        ],
+      },
+      {
+        paragraphBody: [
+          `If any rules require players to Set up additional Objective markers (e.g.
+            Hidden Supplies) during the Place Objective Markers step, players set them
+            up as described on this Mission Rule card.`,
+        ],
+      },
+      {
+        paragraphBody: [
+          `If any rules instruct players to remove one or more Objective markers,
+          do so after setting them all up.`,
+        ],
+      },
     ],
   },
   [MissionsRulesNames.scramblerFields]: {

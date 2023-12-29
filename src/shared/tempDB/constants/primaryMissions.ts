@@ -38,7 +38,7 @@ export const primaryMissions: TInfoCardDeck = {
       {
         paragraphTitle: 'Second, third and fourth battle rounds',
         paragraphBody: [
-          'At the end of each Command phase, the player whose turn it is sxores 5VP for each objective marker they control (up tp 10VP per turn).',
+          'At the end of each Command phase, the player whose turn it is scores 5VP for each objective marker they control (up tp 10VP per turn).',
         ],
       },
       {
@@ -107,9 +107,9 @@ export const primaryMissions: TInfoCardDeck = {
         paragraphBody: [
           `The Objective markers in No Man’s Land are Sites of Power. At the end of 
           each Command phase, the player whose turn it is Empowers all Sites of
-          Power that they Control that have one or more Character models from 
+          Power that they Control that have one or more CHARACTER models from 
           their army within range; each Site of Power remains Empowered by that 
-          player while one or more of their Character models remains within 
+          player while one or more of their CHARACTER models remains within 
           range of it `,
         ],
       },
@@ -117,9 +117,11 @@ export const primaryMissions: TInfoCardDeck = {
         paragraphTitle: 'Second, third and fourth battle rounds',
         paragraphBody: [
           `At the end of each player’s Command phase, the player whose turn it is 
-          scores VP as follows (up to 15VP per turn). 3VP for each objective marker 
-          they control, 3 VP for each objective marker that they have empowered 
-          Note that these are cumulative, so a player that Controls one Objective
+          scores VP as follows (up to 15VP per turn):`,
+          `3VP for each objective marker 
+          they control`,
+          `3 VP for each objective marker that they have empowered`,
+          `Note that these are cumulative, so a player that Controls one Objective
           marker they have also Empowered will score 6VP that turn`,
         ],
       },
