@@ -1,7 +1,12 @@
 .page__control-panel {
   display: flex;
-  max-width: 620px;
   gap: 20px;
+}
+
+@media (min-width: 651px) {
+  .page__control-panel {
+    max-width: 620px;
+  }
 }
 
 @media (max-width: 650px) {
