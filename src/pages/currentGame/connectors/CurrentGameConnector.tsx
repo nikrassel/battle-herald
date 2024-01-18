@@ -7,11 +7,11 @@ import { localStorageService } from '@//app/localStorage';
 import { CurrentCustomGame, CurrentGameControlPanel, CurrentLeviathanGame } from '..';
 import { isStringArray } from '../lib';
 
-const mainInfo = (currentGame: string | string[] | null) => {
-  if (currentGame && typeof currentGame === 'string') {
+const mainInfo = (currentGame: string | null) => {
+  if (currentGame && currentGame.includes('type=leviathan')) {
     return <CurrentLeviathanGame missionId={currentGame} />;
   }
-  if (currentGame && isStringArray(currentGame)) {
+  if (currentGame && currentGame.includes('type=custom')) {
     return <CurrentCustomGame missionInfo={currentGame} />;
   }
   return null;
