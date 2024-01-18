@@ -19,7 +19,7 @@ export const InfoCard = ({ cardType, cardTitle, cardContent, cardImage }: InfoCa
       </div>
       <div className="info-card__body">
         {cardImage ? (
-          <img src={cardImage} />
+          <img className="info-card__img" src={cardImage} />
         ) : (
           cardContent.map((elem, index) => (
             <div className="info-card-paragraph" key={index}>
