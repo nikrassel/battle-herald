@@ -7,7 +7,7 @@ import { APP_PATHS } from '@//app/lib/constants/APP_PATHS';
 
 import { mapLeviathanGameFromSearchParams } from '../lib/models/mapLeviathanGameFromSearchParams';
 import { CurrentCustomGame, CurrentGameControlPanel, CurrentLeviathanGame } from '..';
-import { mapCustomGameFromSearchParams } from '../lib';
+import { SearchParamsKeys, mapCustomGameFromSearchParams } from '../lib';
 
 const mainInfo = (currentGame: string | null) => {
   if (currentGame && currentGame.includes('leviathan')) {
@@ -26,20 +26,20 @@ export const CurrentGameConnector = () => {
   let currentGame = localStorageService.checkCurrentGame();
   if (!context?.isCurrentGame || !currentGame) {
     if (searchParams.size > 0) {
-      if (searchParams.get('type') === 'leviathan') {
+      if (searchParams.get(SearchParamsKeys.type) === 'leviathan') {
         const gameSettings = mapLeviathanGameFromSearchParams(
-          searchParams.get('objective'),
-          searchParams.get('rule'),
-          searchParams.get('deployment'),
-          searchParams.get('layout'),
+          searchParams.get(SearchParamsKeys.objective),
+          searchParams.get(SearchParamsKeys.rule),
+          searchParams.get(SearchParamsKeys.deployment),
+          searchParams.get(SearchParamsKeys.layout),
         );
         localStorageService.setCurrentLeviathanGame(gameSettings);
       }
-      if (searchParams.get('type') === 'custom') {
+      if (searchParams.get(SearchParamsKeys.type) === 'custom') {
         const gameSettings = mapCustomGameFromSearchParams(
-          searchParams.get('objective'),
-          searchParams.get('deployment'),
-          searchParams.getAll('rule'),
+          searchParams.get(SearchParamsKeys.objective),
+          searchParams.get(SearchParamsKeys.deployment),
+          searchParams.getAll(SearchParamsKeys.rule),
         );
         localStorageService.setCurrentCustomGame(gameSettings);
       }
