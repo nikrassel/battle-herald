@@ -1,2 +1,2 @@
 export * from './getRandomMission';
-export * from './setSearchParams';
+export * from './setLeviathanSearchParams';

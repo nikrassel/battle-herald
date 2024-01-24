@@ -1,7 +1,7 @@
 import { APP_PATHS } from '@//app/lib/constants/APP_PATHS';
 import { checkCurrentGame } from '@//app/localStorage';
 
-export const setSearchParams = () => {
+export const setLeviathanSearchParams = () => {
   const currentGame = checkCurrentGame();
   if (currentGame) {
     const gameSettings = currentGame.split('|');

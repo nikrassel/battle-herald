@@ -3,9 +3,11 @@ import { useNavigate, useSearchParams } from 'react-router-dom';
 
 import { GameContext } from '@//app/context';
 import { localStorageService } from '@//app/localStorage';
+import { APP_PATHS } from '@//app/lib/constants/APP_PATHS';
 
-import { CurrentCustomGame, CurrentGameControlPanel, CurrentLeviathanGame } from '..';
 import { mapLeviathanGameFromSearchParams } from '../lib/models/mapLeviathanGameFromSearchParams';
+import { CurrentCustomGame, CurrentGameControlPanel, CurrentLeviathanGame } from '..';
+import { mapCustomGameFromSearchParams } from '../lib';
 
 const mainInfo = (currentGame: string | null) => {
   if (currentGame && currentGame.includes('leviathan')) {
@@ -33,9 +35,17 @@ export const CurrentGameConnector = () => {
         );
         localStorageService.setCurrentLeviathanGame(gameSettings);
       }
+      if (searchParams.get('type') === 'custom') {
+        const gameSettings = mapCustomGameFromSearchParams(
+          searchParams.get('objective'),
+          searchParams.get('deployment'),
+          searchParams.getAll('rule'),
+        );
+        localStorageService.setCurrentCustomGame(gameSettings);
+      }
       currentGame = localStorageService.checkCurrentGame();
     } else {
-      navigate('/');
+      navigate(APP_PATHS.main);
     }
   }
   return (
