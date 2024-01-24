@@ -15,6 +15,7 @@ import {
   getRandomMission,
   leviathanTournamentMissions,
   missionOptions,
+  setSearchParams,
 } from './lib';
 import { deployments, missionRules, primaryMissions, terrainLayouts } from '@//shared/tempDB';
 
@@ -62,7 +63,7 @@ export const LeviathanGame = () => {
       ]);
     }
     context?.setIsCurrentGame(true);
-    navigate('/currentGame');
+    navigate(setSearchParams());
   };
   return (
     <main className="page">
