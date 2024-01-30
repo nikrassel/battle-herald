@@ -20,11 +20,10 @@ export const checkCurrentGame = () => {
   const leviathanGame = localStorage.getItem(CURRENT_LEVIATHAN_GAME);
   const customGame = localStorage.getItem(CURRENT_CUSTOM_GAME);
   if (leviathanGame) {
-    return leviathanGame;
+    return `leviathan|${leviathanGame}`;
   }
   if (customGame) {
-    const gameInfo = customGame.split('|');
-    return gameInfo;
+    return `custom|${customGame}`;
   }
   return null;
 };

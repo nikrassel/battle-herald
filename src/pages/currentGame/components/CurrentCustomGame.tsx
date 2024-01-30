@@ -2,7 +2,7 @@ import { CardRow } from '@//entities/cardRow/CardRow';
 import { mapCurrentCustomGame } from '../lib';
 
 export type TCurrentCustomGame = {
-  missionInfo: string[];
+  missionInfo: string;
 };
 
 export const CurrentCustomGame = ({ missionInfo }: TCurrentCustomGame) => {

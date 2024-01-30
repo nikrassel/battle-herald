@@ -16,6 +16,7 @@ import {
   mapInfoCardsKeys,
   missionsRulesOptions,
   primaryMissionsOptions,
+  setCustomSearchParams,
 } from './lib';
 
 export const CustomGame = () => {
@@ -38,7 +39,7 @@ export const CustomGame = () => {
       localStorageService.setCurrentCustomGame(gameInfo);
     }
     context?.setIsCurrentGame(true);
-    navigate('/currentGame');
+    navigate(setCustomSearchParams());
   };
   return (
     <main className="page">
