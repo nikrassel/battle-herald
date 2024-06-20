@@ -6,6 +6,7 @@ import { GameContext } from '@//app/context';
 import { Button, OptionsField } from '@//shared/ui';
 import { CardRow } from '@//entities/cardRow/CardRow';
 import { localStorageService } from '@//app/localStorage';
+import { APP_PATHS } from '@//app/lib/constants/APP_PATHS';
 
 import {
   TCustomGameSettings,
@@ -16,7 +17,6 @@ import {
   mapInfoCardsKeys,
   missionsRulesOptions,
   primaryMissionsOptions,
-  setCustomSearchParams,
 } from './lib';
 
 export const CustomGame = () => {
@@ -39,7 +39,7 @@ export const CustomGame = () => {
       localStorageService.setCurrentCustomGame(gameInfo);
     }
     context?.setIsCurrentGame(true);
-    navigate(setCustomSearchParams());
+    navigate(APP_PATHS.current);
   };
   return (
     <main className="page">
